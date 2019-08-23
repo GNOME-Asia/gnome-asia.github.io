@@ -7,9 +7,10 @@ cache:
 script:
   - npm run build
 deploy:
-  provider: pages
+  provider: pages 
+  target-branch: master
   skip_cleanup: true
   github_token: $GH_TOKEN
   local_dir: build
   on:
-    branch: master
+    branch: source
