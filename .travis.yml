@@ -14,5 +14,3 @@ deploy:
   local_dir: build
   on:
     branch: source
-after_success:
-  - mv CNAME build
